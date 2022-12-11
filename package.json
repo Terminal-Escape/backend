@@ -1,14 +1,17 @@
 {
-  "name": "backend-express-template",
+  "name": "terminal-escape-room",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "./bin/index.js",
   "type": "commonjs",
+  "bin": {
+    "escape-room-cli": "./bin/index.js"
+  },
   "scripts": {
     "test": "jest --verbose --runInBand --testLocationInResults --setupFiles dotenv/config --passWithNoTests",
     "test:watch": "npm run test -- --watch",
-    "start": "node -r dotenv/config server.js",
-    "start:watch": "nodemon -r dotenv/config server.js",
+    "start": "node -r dotenv/config index.js",
+    "start:watch": "nodemon -r dotenv/config index.js",
     "setup-db": "node -r dotenv/config setup-db.js",
     "setup-heroku": "heroku run npm run setup-db"
   },
@@ -32,13 +35,15 @@
     "supertest": "^6.2.3"
   },
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "bcrypt": "^5.1.0",
+    "chalk": "^4.1.2",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
-    "dotenv": "^16.0.1",
+    "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
-    "pg": "^8.7.3"
+    "pg": "^8.7.3",
+    "prompt-sync": "^4.2.0"
   }
 }
