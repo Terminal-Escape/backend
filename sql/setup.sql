@@ -23,7 +23,7 @@ CREATE TABLE rooms (
     room_name VARCHAR,
     room_description VARCHAR,
     room_objects VARCHAR 
-    FOREIGN KEY RELATION
+    -- FOREIGN KEY RELATION
 );
 
 CREATE TABLE objects (
