@@ -1,9 +1,15 @@
+
+
+
+
 -- Use this file to define your SQL tables
 -- The SQL in this file will be executed when you run `npm run setup-db`
 
-DROP TABLE IF EXISTS user_items;
-DROP TABLE IF EXISTS items;
-DROP TABLE IF EXISTS objects;
+DROP TABLE IF EXISTS rooms CASCADE;
+DROP TABLE IF EXISTS rooms_objects CASCADE;
+DROP TABLE IF EXISTS user_items CASCADE;
+DROP TABLE IF EXISTS items CASCADE;
+DROP TABLE IF EXISTS objects CASCADE;
 
 CREATE TABLE user_items (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -18,14 +24,6 @@ CREATE TABLE items (
     item_secret VARCHAR
 );
 
-CREATE TABLE rooms (
-    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    room_name VARCHAR,
-    room_description VARCHAR,
-    room_objects VARCHAR 
-    -- FOREIGN KEY RELATION
-);
-
 CREATE TABLE objects (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     object_name VARCHAR,
@@ -34,6 +32,21 @@ CREATE TABLE objects (
     object_secret_two VARCHAR,
     object_secret_three VARCHAR
 );
+
+CREATE TABLE rooms (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    room_name VARCHAR,
+    room_description VARCHAR,
+    room_objects VARCHAR
+);
+
+CREATE TABLE rooms_objects (
+    rooms_id BIGINT,
+    objects_id BIGINT,
+    FOREIGN KEY (rooms_id) REFERENCES rooms(id),
+    FOREIGN KEY (objects_id) REFERENCES objects(id)
+);
+
 
 INSERT INTO user_items (
   item_name,
@@ -77,3 +90,15 @@ INSERT INTO rooms (
 )
 VALUES
 ('hunting cabin', 'The room is a sparsely furnished hunting cabin. With log walls and a plank floor. Behind you is a Bunk Bed with three beds all neatly made. To the right of you is a small Desk. A lantern sitting on the desk offers the only dim light in the room. To the left of you is a small lock box, beaten and worn from years of use. To the left of you is a small glass window sitting above the lockbox. In front of you is a closed wooden door.');
+
+-- SELECT
+-- 	rooms
+-- FROM
+-- 	rooms
+--     LEFT JOIN rooms_objects on rooms.id = rooms_objects.rooms_id
+--     LEFT JOIN objects on rooms_objects.objects_id = objects.id
+
+	
+
+
+
