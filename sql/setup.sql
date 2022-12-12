@@ -21,7 +21,9 @@ CREATE TABLE items (
 CREATE TABLE rooms (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     room_name VARCHAR,
-    room_description VARCHAR
+    room_description VARCHAR,
+    room_objects VARCHAR 
+    FOREIGN KEY RELATION
 );
 
 CREATE TABLE objects (
