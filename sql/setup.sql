@@ -18,6 +18,12 @@ CREATE TABLE items (
     item_secret VARCHAR
 )
 
+CREATE TABLE rooms (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    room_name VARCHAR,
+    room_description VARCHAR
+)
+
 CREATE TABLE objects (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     object_name VARCHAR,
@@ -61,3 +67,9 @@ VALUES
 ('Door', 'A wooden door locked tight from the inside. A combination lock is keepiong the latch closed.', 'The door hangs open revealing a dark path into the forrest.')
 
 
+INSERT INTO rooms (
+    room_name,
+    room_description
+)
+VALUES
+('hunting cabin', 'The room is a sparsely furnished hunting cabin. With log walls and a plank floor. Behind you is a Bunk Bed with three beds all neatly made. To the right of you is a small Desk. A lantern sitting on the desk offers the only dim light in the room. To the left of you is a small lock box, beaten and worn from years of use. To the left of you is a small glass window sitting above the lockbox. In front of you is a closed wooden door.')
