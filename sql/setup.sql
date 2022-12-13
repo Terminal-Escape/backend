@@ -54,7 +54,7 @@ INSERT INTO user_items (
 ) VALUES 
 ('key', false),
 ('weathered paper', false),
-('lamp', false),
+('lantern', false),
 ('journal', false),
 ('door', false);
 
