@@ -109,10 +109,8 @@ VALUES
 
 CREATE TABLE users (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  email VARCHAR,
-  password_hash VARCHAR NOT NULL,
-  first_name VARCHAR NOT NULL,
-  last_name VARCHAR NOT NULL
+  userName VARCHAR,
+  password_hash VARCHAR NOT NULL
 );
 
 -- SELECT
