@@ -83,7 +83,7 @@ VALUES
 (1, 'Bunk Beds', 'A set of three bunk beds. All neatly made. Searching the beds you find a Small Key under the pillow of the bottom bunk.', 'A set of three bunk beds. you messed all the blankets up though.', null, null),
 (1,'A Small metal Lock Box', 'A small metal lockbox beaten and weathered. It is currently locked.', 'A small metal lockbox. Beaten and weathered. You unlock it with the key you found. inside you find a Weathered Piece of Paper. The paper has the numbers 5, 1, 3.', 'A small metal lockbox. Beaten and weathered. It sits open and empty.', null),
 (1, 'Window', 'A small glass window divided into 4 sections with wooden trim. It is too dark outside to see anything. There seems to be something written on the glass but you cant make it out in the dim light.', 'A small glass window divided into 4 sections with wooden trim. With the light of the lantern you can make out the numbers 4, 2, 6.', null, null),
-(1, 'Door', 'A wooden door locked tight from the inside. A combination lock is keepiong the latch closed.', 'The door hangs open revealing a dark path into the forrest.', null, null);
+(1, 'Door', 'A wooden door locked tight from the inside. A combination lock is keeping the latch closed.', 'The door hangs open revealing a dark path into the forest.', null, null);
 
 
 INSERT INTO rooms (
