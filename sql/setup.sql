@@ -68,7 +68,7 @@ VALUES
 ('Key', 'A small Key for a small lock', null),
 ('Weathered Paper', 'A Peice of paper, crumpled and weathered.', 'The numbers 5, 1, 3 can be made out.'),
 ('Lantern', 'A small handleheld lantern emitting a dim light', null),
-('Journal', 'A worn leather bound journal.', 'The final page has been ripped out but the following can be read from top to bottom on the remaining scraps of page: Doo... Co... 7');
+('Journal', 'A worn leather bound journal.', 'Nothing much of use seems to be in the Journal, but the final page has been ripped out. The following can be read on the remaining scraps of paper: Doo... Co... 51...');
 
 INSERT INTO objects (
     rooms_id,
