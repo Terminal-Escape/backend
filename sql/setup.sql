@@ -1,5 +1,16 @@
+
+
+
+
 -- Use this file to define your SQL tables
 -- The SQL in this file will be executed when you run `npm run setup-db`
+
+DROP TABLE IF EXISTS rooms CASCADE;
+DROP TABLE IF EXISTS rooms_objects CASCADE;
+DROP TABLE IF EXISTS user_items CASCADE;
+DROP TABLE IF EXISTS items CASCADE;
+DROP TABLE IF EXISTS objects CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
 
 CREATE TABLE user_items (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
