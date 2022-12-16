@@ -78,8 +78,8 @@ describe('backend-express-template routes', () => {
       Array [
         Object {
           "id": "2",
-          "room_description": "You stand at the edge of a small campground, clearly abandoned, with trash and items scattered about. To your right you see a Fire Pit with chairs and plates scattered about. To your right you see a lake with a small Dock reaching out into it. To your left you see an RV with the door handing wide open. In front of you, you see a small Popup Tent nestled near the edge of the campground.",
-          "room_name": "campground",
+          "room_description": "The room is a sparsely furnished hunting cabin. With log walls and a plank floor. Behind you is a Bunk Bed with three beds all neatly made. To the right of you is a small Desk. A lantern sitting on the desk offers the only dim light in the room. To the left of you is a small lock box, beaten and worn from years of use. To the left of you is a small glass window sitting above the lockbox. In front of you is a closed wooden door.",
+          "room_name": "hunting cabin",
           "rooms_objects": Array [
             Object {
               "id": 6,
@@ -139,8 +139,8 @@ describe('backend-express-template routes', () => {
         },
         Object {
           "id": "1",
-          "room_description": "The room is a sparsely furnished hunting cabin. With log walls and a plank floor. Behind you is a Bunk Bed with three beds all neatly made. To the right of you is a small Desk. A lantern sitting on the desk offers the only dim light in the room. To the left of you is a small lock box, beaten and worn from years of use. To the left of you is a small glass window sitting above the lockbox. In front of you is a closed wooden door.",
-          "room_name": "hunting cabin",
+          "room_description": "You stand at the edge of a small campground, clearly abandoned, with trash and items scattered about. To your right you see a Fire Pit with chairs and plates scattered about. To your right you see a lake with a small Dock reaching out into it. To your left you see an RV with the door handing wide open. In front of you, you see a small Popup Tent nestled near the edge of the campground.",
+          "room_name": "campground",
           "rooms_objects": Array [
             Object {
               "id": 1,
